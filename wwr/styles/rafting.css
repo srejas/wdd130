@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+:root {
+    --primary-color: #F5FBEF;
+    --secondary-color: #DEB991;
+    --accent1-color: #646F58;
+    --accent2-color: #0B3954;
+
+    --heading-font: Nunito Sans, sans-serif;
+    --paragraph-font: Nunito Sans, sans-serif;
+
+    --nav-background-color: var(--accent1-color);
+    --nav-link-color: var(--primary-color);
+    --nav-hover-link-color: #349a82;
+    --nav-hoover-background-color: var(--primary-color);
+}
+body {
+    font-family: var(--paragraph-font);
+}
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hoover-background-color);
+}
+.hero {
+    position: relative;
+}
+.hero h1 {
+    position: absolute;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    width: 100%;
+    top: 10%;
+    opacity: 0.9;
+}
+.hero article {
+    position: absolute;
+    background-color: var(--secondary-color);
+    width: 50rem;
+    height: auto;
+    margin: 2rem;
+    top: 30%;
+    left: 7%;
+    width: 80%;
+    opacity: 0.8;
+    border: 1px solid var(--accent2-color);
+}
+#background-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#side-pic {
+    float: right;
+    padding: 1rem;
+    opacity: 1;
+}
+.hero p {
+    margin: 0;
+    padding: 1rem;
+}
+section img {
+    display: block;
+}
+footer a {
+    text-decoration: none;
+}
