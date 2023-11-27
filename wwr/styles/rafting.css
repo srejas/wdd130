@@ -16,9 +16,16 @@
 body {
     font-family: var(--paragraph-font);
 }
+header {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    align-items: center;
+}
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    opacity: 0.9;
 }
 nav {
     background-color: var(--nav-background-color);
@@ -37,6 +44,10 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hoover-background-color);
+}
+section {
+    text-align: center;
+    background-color: var(--secondary-color);
 }
 .hero {
     position: relative;
@@ -79,6 +90,41 @@ nav a:hover {
 section img {
     display: block;
 }
+footer {
+    display: grid;
+    grid-template-columns: 1fr 40px 40px 40px;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+}
+footer p {
+    justify-self: center;
+}
 footer a {
     text-decoration: none;
+    justify-content: right;
+}
+.history {
+    margin-block: 2px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+.adventure {
+    margin-bottom: 2px;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+.adventure h2 {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    align-self: center;
+}
+.adventure figure {
+    margin: 0;
+    justify-self: center;
 }
