@@ -39,7 +39,7 @@ fieldset {
 legend {
     padding: 0.5rem;
     color: navy;
-    font-size: 1.3;
+    font-size: 1.3em;
 }
 label, input, button, select, textarea {
     font-family: Roboto, Ariel, sans-serif;
