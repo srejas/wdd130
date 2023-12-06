@@ -13,6 +13,7 @@
     --nav-hover-link-color: #349a82;
     --nav-hoover-background-color: var(--primary-color);
 }
+/* About Us Page */
 body {
     font-family: var(--paragraph-font);
 }
@@ -26,6 +27,7 @@ h1, h2 {
     color: var(--primary-color);
     background-color: var(--accent2-color);
     opacity: 0.9;
+    text-align: center;
 }
 nav {
     background-color: var(--nav-background-color);
@@ -41,7 +43,7 @@ nav a {
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
 }
-nav a:hover {
+nav a:hover, #wireframe:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hoover-background-color);
 }
@@ -92,7 +94,7 @@ section img {
 }
 footer {
     display: grid;
-    grid-template-columns: 1fr 40px 40px 40px;
+    grid-template-columns: 90px 1fr 40px 40px 40px;
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
@@ -100,6 +102,7 @@ footer {
 }
 footer p {
     justify-self: center;
+    grid-column: 2/3;
 }
 footer a {
     text-decoration: none;
@@ -115,16 +118,111 @@ footer a {
     margin-bottom: 2px;
     display: grid;
     grid-template-rows: 80px 1fr;
-    grid-template-rows: 80px 1fr;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
 }
-.adventure h2 {
+.adventure h2, .employees h2 {
     grid-column: 1/6;
     grid-row: 1/2;
     align-self: center;
 }
-.adventure figure {
+.adventure figure, .employees figure {
     margin: 0;
     justify-self: center;
+}
+/* Contact Us Page */
+.contact {
+    background-color: var(--secondary-color);
+}
+.contact h1 {
+    margin-top: 0;
+}
+/* Info */
+.contact-info a:link, a:visited {
+    color: var(--accent2-color);
+}
+.contact-info a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hoover-background-color);
+}
+.contact-info {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 20px) 1fr;
+}
+.contact-info a {
+    grid-column: 1/2;
+    margin: 1rem;
+    text-align: center;
+}
+.contact-info iframe {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: 1rem;
+    align-content: center;
+}
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+fieldset div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem;
+}
+.radio {
+    grid-template-columns: 3fr 1fr;
+}
+.radio input {
+    align-items: start;
+}
+.radio label {
+    margin: 0.5rem;
+}
+.checkbox {
+    text-align: left;
+    grid-template-columns: 1fr 15px;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+button {
+    margin: 1rem;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+/* emplyees section layout*/
+.employees {
+    margin-block: 2px;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+/* Contact Us footer */
+#wireframe {
+    text-decoration: none;
+    justify-content: center;
+    grid-column: 1/2;
+    margin-left: 10px;
+    color: var(--nav-link-color);
+    text-decoration: none;
 }
