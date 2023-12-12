@@ -53,6 +53,7 @@ section {
 }
 .hero {
     position: relative;
+    margin-top: 2px;
 }
 .hero h1 {
     position: absolute;
@@ -92,6 +93,31 @@ section {
 section img {
     display: block;
 }
+/* history section */
+.history {
+    margin-block: 2px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+/* adventure awaits you */
+.adventure {
+    margin-bottom: 2px;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+.adventure h2, .employees h2 {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    align-self: center;
+}
+.adventure figure, .employees figure, .book-now figure {
+    margin: 0;
+    justify-self: center;
+}
+/* general footer */
 footer {
     display: grid;
     grid-template-columns: 90px 1fr 40px 40px 40px;
@@ -108,33 +134,15 @@ footer a {
     text-decoration: none;
     justify-content: right;
 }
-.history {
-    margin-block: 2px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-}
-.adventure {
-    margin-bottom: 2px;
-    display: grid;
-    grid-template-rows: 80px 1fr;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-}
-.adventure h2, .employees h2 {
-    grid-column: 1/6;
-    grid-row: 1/2;
-    align-self: center;
-}
-.adventure figure, .employees figure {
-    margin: 0;
-    justify-self: center;
-}
 /* Contact Us Page */
 .contact {
+    margin-top: 2px;
     background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .contact h1 {
+    grid-column: 1/3;
     margin-top: 0;
 }
 /* Info */
@@ -149,12 +157,12 @@ footer a {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 20px) 1fr;
+    grid-template-rows: repeat(3, 40px) 1fr;
 }
 .contact-info a {
     grid-column: 1/2;
-    margin: 1rem;
     text-align: center;
+    align-self: end;
 }
 .contact-info iframe {
     grid-column: 1/2;
@@ -162,6 +170,7 @@ footer a {
     margin: 1rem;
     align-content: center;
 }
+/* contact form */
 form {
     width: 500px;
     margin: 0 auto;
@@ -225,4 +234,114 @@ button {
     margin-left: 10px;
     color: var(--nav-link-color);
     text-decoration: none;
+}
+/* Trips Page */
+.banner {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.banner h1 {
+    position: absolute;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    width: 100%;
+    top: 40%;
+    opacity: 0.9;
+}
+.banner img {
+    width: 100%;
+    height: 450px;
+}
+/* Booking info section */
+.book-now {
+    display: grid;
+    grid-template-rows: 100px repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-block: 2px;
+    width: 50em;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+#trips-button {
+    text-align: center;
+    justify-self: center;
+    width: 40em;
+    grid-column: 1/4;
+}
+/* Booking Table */
+.pricing {
+    grid-column: 1/4;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+.pricing thead {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+td {
+    border: 1px solid var(--accent2-color);
+}
+/* Home Page */
+.home-banner {
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.home-banner h1 {
+    position: absolute;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    width: 100%;
+    top: 20%;
+    opacity: 0.9;
+}
+.home-banner img {
+    width: 100%;
+    height: 450px;
+}
+.links-and-forms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2px;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+.linking-button h2 {
+    background-color: var(--accent1-color);
+    margin-right: 1.5rem;
+}
+.extra-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+#p1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-left: 2rem;
+}
+#img1 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+#img2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#p2 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin-right: 2rem;
 }

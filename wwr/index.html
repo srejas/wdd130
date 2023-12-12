@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Rafting Travel</title>
+    <meta name="description" content="This is the home page for Rafting Travel. It will have the option to sign up 
+    for a newsletter, a button that takes you to the 'Trips' page, and some additional introductory information for 
+    the page.">
+    <meta name="author" content="Spencer Rejas">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo" width="60">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="home-banner">
+            <img src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting16_1024.jpg" alt="Raft in shallow rapids">
+            <h1>Nature's Roller Coaster Awaits</h1>
+        </div>
+        <div class="links-and-forms">
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Did You Get Our Weekly Newsletter?</legend>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="fullname">
+                            <label for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="useremail">
+                        </div>
+                    </fieldset>
+                    <button type="submit">Sign Me Up!</button>
+                </form>
+            </section>
+            <section class="linking-button">
+                <h2>Adventure For Every Level</h2>
+                <button id="home-button" onclick="window.location.href='trips.html';">Check out our trips page -></button>
+            </section>
+        </div>
+        <section class="extra-info">
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat praesentium, molestias reprehenderit cupiditate 
+                optio pariatur officiis veniam iste magnam sed sunt quam illo. Ea suscipit voluptatem nisi voluptatum dolorum!</p>
+            <img id="img-1" src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting22_600.jpg" alt="Hard hats on raft" width="300">
+            <img id="img-2" src="https://byui-cse.github.io/wdd130-ww-course/resources/images/rafting42_600.jpg" alt="Rafters in white water" width="300">
+            <p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum iste corrupti modi quos quam odit sit aliquam repellat 
+                quod ea illum nam, voluptates unde. Velit rerum blanditiis minus iure illum.</p>
+        </section>
+    </main>
+    <footer>
+        <a id="wireframe" href="https://app.moqups.com/kWMeTbEVcQP7K0RF2fhnUUsTUD3HKTeT/view/page/a026e3777">Wireframe</a>
+        <p>&copy;2023 | Rafting Travel | Spencer Rejas</p>
+        <a href="https://facebook.com">
+            <img src="images/facebook.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.png" alt="Instagram" width="30">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/x.png" alt="X" width="30">
+        </a>
+    </footer>
+</body>
+</html>
